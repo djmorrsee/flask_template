@@ -1,0 +1,194 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for
+   you to simply add your own. This is a basic template
+   after all.
+   ---------------------------------------------------------*/
+body, html {
+  font-family:Sans-Serif;
+}
+
+.panel {
+  border-color:#500;
+}
+
+.panel-heading {
+  border-color:#400 !important;
+  color:#F00 !important;
+}
+
+.skill-table, .skill-table tr, .skill-table tr td {
+  padding:0;
+  margin:0;
+}
+
+table th {
+  background-color:#eee;
+}
+
+p, h1, h2, h3, img {
+  margin:0;
+}
+
+a, a:visited, a:focus, a:hover, a:active {
+    color: #F00;
+}
+
+
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+
+.page-title {
+  color:#F00;
+}
+
+.game-panel {
+  border-width:2px;
+}
+
+.game-body {
+  padding:0;
+  padding-top:15px;
+}
+
+.team-panel {
+  padding:0;
+}
+
+.team-body {
+  padding:0;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.team-body div {
+  padding:1px;
+}
+
+.player-body {
+  padding:0;
+}
+
+.player-details {
+}
+
+.player-portrait {
+  padding:15px;
+}
+
+.player-portrait-sm {
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+#group-portrait {
+  width:10%;
+}
+
+.group-table tr td, .group-table tr {
+  padding:0;
+}
+
+.player-portrait img {
+  padding:1px;
+}
+
+.player-stats {
+  padding:15px;
+}
+
+.player-items {
+  padding:0;
+  padding-top:15px;
+  padding-right:15px;
+}
+
+.player-items img {
+  padding:1px;
+}
+
+.item-img-sm {
+  width:100%;
+  height:50%;
+  padding:1px;
+}
+
+.player-skills {
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.player-skills img, .player-skills div {
+  padding:1px;
+}
+
+.skill-img-box {
+  padding:0;
+}
+
+.hero_panel_img {
+  margin:0;
+  padding:1px;
+}
+
+#team0 {
+  background-color:#efe;
+}
+
+#team1 {
+  background-color:#fee;
+}
+
+
+
+/* ---------------------------------------------------------
+   Print styles
+   ---------------------------------------------------------*/
+@media print {
+    * {
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        background: transparent !important;
+    }
+
+    html {
+        background-color: #fff;
+    }
+    /* Hide navigation */
+    nav {
+        display: none;
+    }
+
+    /* Show link destinations in brackets after the link text */
+    a[href]:after {
+        content: " (" attr(href) ") ";
+    }
+
+    a[href] {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #06c;
+        border: none;
+    }
+    /* Don't show link destinations for JavaScript or internal links */
+    a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+
+    /* Show abbr title value in brackets after the text */
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    figure {
+        margin-bottom: 1em;
+        overflow: hidden;
+    }
+
+        figure img {
+            border: 1px solid #000;
+        }
+}

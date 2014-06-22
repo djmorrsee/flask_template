@@ -1,0 +1,5 @@
+# Python Trash
+*.pyc
+
+# Virtual Environment
+.venv
